@@ -18,13 +18,18 @@ python train.py wmt16.en-de.deep-shallow.dist/data-bin/ --arch transformer --sha
 --max-tokens 4096 --dropout 0.2 --encoder-layers 12 --encoder-embed-dim 512 --decoder-layers 1 \
 --decoder-embed-dim 512 --max-update 300000 \
 --distributed-world-size 16 --distributed-port 54186 --fp16 --max-source-positions 10000 --max-target-positions 10000 \
---save-dir  checkpoint/trans_ende-dist_12-1_0.2/  --seed 1 \
+--save-dir  checkpoint/trans_ende-dist_12-1_0.2/  --seed 1
 ```
 
 ### Evaluation
+
+After downloading the tarballs from the table above:
+
 ```bash
-python generate.py wmt16.en-de.deep-shallow.dist/data-bin/ --path checkpoint/trans_ende-dist_12-1_0.2/ \
---beam 5 --remove-bpe  --lenpen 1.0 --max-sentences 10 \
+tar -xvzf trans_ende-dist_12-1_0.2.tar.gz
+tar -xvzf wmt16.en-de.deep-shallow.dist.tar.gz
+python generate.py wmt16.en-de.deep-shallow.dist/data-bin/ --path trans_ende-dist_12-1_0.2/checkpoint_best.pt \
+--beam 5 --remove-bpe  --lenpen 1.0 --max-sentences 10
 ```
 
 ## Note
