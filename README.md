@@ -28,7 +28,7 @@ After downloading the tarballs from the table above:
 ```bash
 tar -xvzf trans_ende-dist_12-1_0.2.tar.gz
 tar -xvzf wmt16.en-de.deep-shallow.dist.tar.gz
-python generate.py wmt16.en-de.deep-shallow.dist/data-bin/ --path trans_ende-dist_12-1_0.2/checkpoint_best.pt \
+python generate.py wmt16.en-de.deep-shallow.dist/data-bin/ --path trans_ende-dist_12-1_0.2/checkpoint_top5_average.pt \
 --beam 5 --remove-bpe  --lenpen 1.0 --max-sentences 10
 ```
 
