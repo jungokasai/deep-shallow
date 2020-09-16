@@ -6,9 +6,8 @@ Model | Data | Test BLEU
 |---|---|---|
  [WMT16 EN-DE 12-1 w/ Distillation](https://drive.google.com/uc?id=1x_G2cjvM1nW5hjAB8-vWxRqtQTlmIaQU) | [WMT16/14 Distilled Data](https://drive.google.com/uc?id=1mNufoynJ9-Zy1kJh2TA_lHm2squji0i9) | 28.3
  [WMT16 EN-DE 6-1 w/ Distillation](https://drive.google.com/uc?id=1oA2aqZlVNj5FarxBlNXEHpBS4lRetTzU) | [WMT16/14 Distilled Data](https://drive.google.com/uc?id=1mNufoynJ9-Zy1kJh2TA_lHm2squji0i9) | 27.4
- [WMT EN-DE 12-1 w/o Distillation](https://drive.google.com/uc?id=1Wup2D318QYBFPW_NKI1mfP_hXOfmUI9r) | [WMT16/14 Raw Data](https://drive.google.com/uc?id=1iO7um-HWoNoRKDtw27YUSgyeubn9uXqj) | 26.9
+ [WMT16 EN-DE 12-1 w/o Distillation](https://drive.google.com/uc?id=1Wup2D318QYBFPW_NKI1mfP_hXOfmUI9r) | [WMT16/14 Raw Data](https://drive.google.com/uc?id=1iO7um-HWoNoRKDtw27YUSgyeubn9uXqj) | 26.9
 Additional Models
-|---|---|---|
  [WMT19 EN-DE Transformer Base](https://drive.google.com/uc?id=1yT7ZjqfvUYOBXvMjeY8uGRHQFWoSo8Q5) | [WMT19 EN-DE Transformer Big](https://drive.google.com/uc?id=15gAzHeRUCs-QV8vHeTReMPEh1j8excNE) | [WMT19 EN-DE moses tokenize + fastbpe](https://drive.google.com/uc?id=1j6z9fYdlUyOYsh7KJoumRlr1yHczxR5T) 
 
 
