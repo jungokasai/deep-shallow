@@ -4,9 +4,12 @@
 See our [paper](https://arxiv.org/abs/2006.10369) for more detail. `12-1` denotes a 12-layer encoder and 1-layer decoder.
 Model | Data | Test BLEU
 |---|---|---|
- [WMT EN-DE 12-1 w/ Distillation](https://drive.google.com/uc?id=1x_G2cjvM1nW5hjAB8-vWxRqtQTlmIaQU) | [WMT16/14 Distilled Data](https://drive.google.com/uc?id=1mNufoynJ9-Zy1kJh2TA_lHm2squji0i9) | 28.3
- [WMT EN-DE 6-1 w/ Distillation](https://drive.google.com/uc?id=1oA2aqZlVNj5FarxBlNXEHpBS4lRetTzU) | [WMT16/14 Distilled Data](https://drive.google.com/uc?id=1mNufoynJ9-Zy1kJh2TA_lHm2squji0i9) | 27.4
+ [WMT16 EN-DE 12-1 w/ Distillation](https://drive.google.com/uc?id=1x_G2cjvM1nW5hjAB8-vWxRqtQTlmIaQU) | [WMT16/14 Distilled Data](https://drive.google.com/uc?id=1mNufoynJ9-Zy1kJh2TA_lHm2squji0i9) | 28.3
+ [WMT16 EN-DE 6-1 w/ Distillation](https://drive.google.com/uc?id=1oA2aqZlVNj5FarxBlNXEHpBS4lRetTzU) | [WMT16/14 Distilled Data](https://drive.google.com/uc?id=1mNufoynJ9-Zy1kJh2TA_lHm2squji0i9) | 27.4
  [WMT EN-DE 12-1 w/o Distillation](https://drive.google.com/uc?id=1Wup2D318QYBFPW_NKI1mfP_hXOfmUI9r) | [WMT16/14 Raw Data](https://drive.google.com/uc?id=1iO7um-HWoNoRKDtw27YUSgyeubn9uXqj) | 26.9
+Additional Models
+|---|---|---|
+ [WMT19 EN-DE Transformer Base](https://drive.google.com/uc?id=1yT7ZjqfvUYOBXvMjeY8uGRHQFWoSo8Q5) | [WMT19 EN-DE Transformer Big](https://drive.google.com/uc?id=15gAzHeRUCs-QV8vHeTReMPEh1j8excNE) | [WMT19 EN-DE moses tokenize + fastbpe](https://drive.google.com/uc?id=1j6z9fYdlUyOYsh7KJoumRlr1yHczxR5T) 
 
 
 ### Train
@@ -30,6 +33,20 @@ tar -xvzf trans_ende-dist_12-1_0.2.tar.gz
 tar -xvzf wmt16.en-de.deep-shallow.dist.tar.gz
 python generate.py wmt16.en-de.deep-shallow.dist/data-bin/ --path trans_ende-dist_12-1_0.2/checkpoint_top5_average.pt \
 --beam 5 --remove-bpe  --lenpen 1.0 --max-sentences 10
+```
+
+# Citation
+
+Please cite as:
+
+```bibtex
+@article{Kasai2020DeepES,
+  title={Deep Encoder, Shallow Decoder: Reevaluating the Speed-Quality Tradeoff in Machine Translation},
+  author={Jungo Kasai and Nikolaos Pappas and Hao Peng and J. Cross and Noah A. Smith},
+  journal={ArXiv},
+  year={2020},
+  volume={abs/2006.10369}
+}
 ```
 
 ## Note
